@@ -1,0 +1,25 @@
+conda create --name app_proto_py27 python=2.7 opencv gdal tensorflow-gpu=1.15 keras scikit-learn matplotlib seaborn pyproj pillow shapely geopandas pyodbc scikit-image paramiko memory_profiler
+	conda install sqlalchemy
+	pip install setGPU
+	pip install python-geohash
+	install makevalid via github
+	conda install dbf
+	conda install joblib
+	pip install pycrs==0.1.3
+	conda install requests
+	conda install wget
+	pip install wget
+	pip install dateparser
+	pip install geopandas==0.5.1
+	
+
+
+	
+stepsnya:	
+pastikan dev sudah di push ke git smua changes
+	clone dev ke azure (atau target machine)
+	copy model - model DL ke azure (atau target machine)
+	copy shapepetak ke azure (atau target machine)
+	copy shapegrid ke azure (atau target machine)
+	copy config.py files ke azure (atau target machine)
+	configure config.py sesuai dengan alamat di azure	
