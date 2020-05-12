@@ -47,8 +47,5 @@ for match in matches:
         match_id_required = match['match_id']
 print(home_team_required + ' vs ' + away_team_required + ' has id:' + str(match_id_required))
         
-#Exercise: 
-#1, Edit the code above to print out the result list for the Mens World cup 
-#2, Edit the code above to find the ID for England vs. Sweden
-#3, Write new code to write out a list of just Sweden's results in the tournament.
+
 
