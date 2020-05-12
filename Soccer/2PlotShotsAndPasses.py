@@ -71,9 +71,3 @@ fig.set_size_inches(10, 7)
 #fig.savefig('Output/shots.pdf', dpi=100) 
 plt.show()
 
-#Exercise: 
-#1, Create a dataframe of passes which contains all the passes in the match
-#2, Plot the start point of every Sweden pass. Attacking left to right.
-#3, Plot only passes made by Caroline Seger (she is Sara Caroline Seger in the database)
-#4, Plot arrows to show where the passes we
-
