@@ -161,8 +161,7 @@ def write_shapefile(tmp, coords_cnt, out_shp, TLx2, TLy2, radPerPixX, radPerPixY
 
     # Save and close everything
     #ds = layer = None
-
-#Maksudnya?	
+	
 # obtain tif georef info
 def load_georef(raw_dir, src):
     raster = gdal.Open(raw_dir + src)
