@@ -83,8 +83,7 @@ raw_dir = home + 'RawData/'
 archive_dir = home + 'SMF_DL_weed_models_archive/'
 trainAnalysis = archive_dir + 'trainAnalysis/'
 modelArchive = archive_dir + 'modelArchive/'
-# tensor_log_dir = 'C:\\Users\\AIIC_01\\Desktop\\Julian\\app_proto\\DL_Prep\\Prototype Deep Learning\\Codes\\SMF_DL_models_archive\\EPEL\\12M\\tensorlogs\\'
-# saveAugImages = "C:\\Users\\AIIC_01\\Desktop\\Sherly\\APP\\DL_WeedPrep\\Input\\augm_12m_collated\\"
+
 
 dir_path= home + 'Scripts/'
 os.chdir(dir_path)
@@ -116,7 +115,6 @@ def pixelToLatLon(TL_lon , TL_lat, radPerPixX, radPerPixY, x, y):
     return lon, lat
 
 	
-#Kenapa harus bikin polygon?	
 # create polygons for each grid
 def create_polygon(coords_cnt, TLx2, TLy2, radPerPixX, radPerPixY):
     ring = ogr.Geometry(ogr.wkbLinearRing)
@@ -131,8 +129,7 @@ def create_polygon(coords_cnt, TLx2, TLy2, radPerPixX, radPerPixY):
     poly = ogr.Geometry(ogr.wkbPolygon)
     poly.AddGeometry(ring)
     return poly.ExportToWkt()
-
-#Ini buat apa ya?	
+	
 # write shape file
 def write_shapefile(tmp, coords_cnt, out_shp, TLx2, TLy2, radPerPixX, radPerPixY):
     t_srs = osr.SpatialReference() ###
@@ -235,7 +232,7 @@ def performance_results(results, trainAnalysis, modelname):
     fig.savefig(trainAnalysis+modelname+"_Acc and Loss.jpeg")
     plt.close()
 
-#Ini buat apa?	
+
 # Optimal Cutoff for binary case
 def get_best_cutoff(fpr, tpr, thresholds):
 
